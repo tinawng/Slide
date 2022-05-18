@@ -17,7 +17,6 @@
 #app {
   @apply min-h-screen;
   @apply pt-6 pb-10 px-4;
-  @apply bg-gray-100;
 }
 #app > * {
   @apply max-w-7xl mx-auto;

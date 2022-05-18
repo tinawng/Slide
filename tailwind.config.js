@@ -11,6 +11,12 @@ module.exports = {
         '2xs': '.65rem',
         '3xs': '.6rem',
       },
+      height: {
+        '7.5': '1.85rem',
+      },
+      width: {
+        '7.5': '1.85rem',
+      }
     },
     screens: {
       'sm': '1024px',

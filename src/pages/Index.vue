@@ -39,12 +39,12 @@ function goToMailPage(id) {
     <div v-for="mail in mails" :key="mail.date" class="row" @click="goToMailPage(mail._id)">
       <div>
         <img
-          class="w-7 rounded-full"
+          class="w-7.5 sm:w-7 rounded-full"
           :src="`https://logo.clearbit.com/${mail.from_address.split('@')[1]}`"
           @error="imgFallback"
         />
         <div
-          class="h-7 w-7 bg-gray-100 rounded-full flex justify-center items-center text-gray-600 font-semibold uppercase hidden"
+          class="h-7.5 w-7.5 sm:h-7 sm:w-7 bg-gray-100 rounded-full flex justify-center items-center text-gray-600 font-semibold uppercase hidden"
         >
           <span>{{mail.from_name[0] || mail.from_address[0]}}</span>
         </div>
@@ -67,9 +67,9 @@ function goToMailPage(id) {
 
 .row {
   @apply h-14 sm:h-11 z-0;
-  @apply mb-3 px-2;
+  @apply mb-3 px-2.5 sm:px-2;
   @apply grid items-center;
-  grid-template-columns: 3rem 1fr 0 0 0 3.5rem;
+  grid-template-columns: 2.7rem 1fr 0 0 0 3.5rem;
   @apply bg-white rounded-lg shadow;
   @apply text-xs sm:text-sm;
   @apply transition-all;
