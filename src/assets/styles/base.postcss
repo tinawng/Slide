@@ -1,19 +1,20 @@
-@import "@/assets/styles/card.postcss";
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 
-.highlight {
-  @apply text-transparent;
-  @apply bg-clip-text;
-  background-image: linear-gradient(45deg, #aa85ff, #ffc39b);
-  animation: hue-rotation 1.2s linear infinite;
+  -webkit-tap-highlight-color: transparent;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
 }
-@keyframes hue-rotation {
-  from {
-    filter: hue-rotate(0deg);
-  }
-  to {
-    filter: hue-rotate(1turn);
-  }
-}
+
+:focus-visible { outline: transparent !important; }
+:focus { outline: transparent !important; }
+
+::-webkit-scrollbar { @apply w-0; }
+
+input { @apply bg-transparent; }
 
 @font-face {
   font-family: 'Inter var';
