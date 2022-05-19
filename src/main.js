@@ -6,6 +6,8 @@ import '@/assets/styles/tailwind.css'
 import '@/assets/styles/base.postcss'
 import ky from 'ky'
 
+navigator.serviceWorker.register('/sw.js', { 'type': 'classic' });
+
 const app = createApp(App)
 
 const router = createRouter({
