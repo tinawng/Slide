@@ -73,4 +73,7 @@ const mail = ref(await $api.get(`mail/${route.query.id}`).json())
 .page__mail_content a {
   @apply underline underline-offset-1;
 }
+.page__mail_content > :not(p) {
+  @apply w-full;
+}
 </style>
