@@ -20,8 +20,8 @@ export default defineConfig({
         start_url: "https://slide.tina.cafe/",
         scope: "https://slide.tina.cafe/",
         display: "standalone",
-        background_color: "#F3F4F6",
-        theme_color: '#F87171',
+        background_color: "#f87171",
+        theme_color: '#f87171',
         orientation: "portrait-primary",
         icons: [
           {
