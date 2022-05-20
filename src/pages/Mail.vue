@@ -32,11 +32,10 @@ const mail = ref(await $api.get(`mail/${route.query.id}`).json())
 .page__container {
   @apply relative;
   @apply w-full;
-  @apply p-6;
+  @apply p-4 sm:p-6;
   @apply bg-white rounded-lg shadow-md;
 }
-</style>
-<style lang="postcss">
+
 .page__view_mode {
   @apply absolute top-0 right-0;
   @apply flex;
@@ -74,6 +73,8 @@ const mail = ref(await $api.get(`mail/${route.query.id}`).json())
   @apply underline underline-offset-1;
 }
 .page__mail_content > :not(p) {
-  @apply w-full;
+  min-width: 100%!important;
+  width: 100%!important;
+  max-width: 100%!important;
 }
 </style>
