@@ -81,7 +81,7 @@ function goToMailPage(id) {
   }
 }
 .row > * {
-  @apply overflow-hidden;
+  @apply overflow-hidden sm:overflow-visible;
 }
 .row:hover {
   @apply shadow-md -translate-y-1;

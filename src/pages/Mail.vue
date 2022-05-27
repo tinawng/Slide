@@ -46,7 +46,7 @@ const mail = ref(await $api.get(`mail/${route.query.id}`).json())
   @apply bg-gray-50;
   @apply text-gray-400;
   @apply transition-colors;
-  @apply cursor-pointer;
+  @apply cursor-pointer select-none;
 }
 .view_mode:first-of-type {
   @apply rounded-bl-lg;
